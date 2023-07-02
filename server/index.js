@@ -11,9 +11,8 @@ const app = express();
 //middlewares
 app.use(cookieParser());
 
-const originUrl = process.env.BASE_URI;
 
-app.use(cors({credentials: true, origin: originUrl}));
+app.use(cors({credentials: true, origin: 'https://64a1ca3cafc4980573351b28--playful-biscuit-c078b1.netlify.app'}));
 app.use(express.json());
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
