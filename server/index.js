@@ -11,7 +11,7 @@ const app = express();
 //middlewares
 app.use(cookieParser());
 
-app.use(cors({credentials: true, origin: 'https://playful-biscuit-c078b1.netlify.app'}));
+app.use(cors({credentials: true, origin: 'https://bloglikho.netlify.app'}));
 app.use(express.json());
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
