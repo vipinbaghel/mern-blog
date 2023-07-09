@@ -12,7 +12,7 @@ const app = express();
 app.use(cookieParser());
 
 //https://64a1ca3cafc4980573351b28--playful-biscuit-c078b1.netlify.ap
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors({credentials: true, origin: '*'}));
 app.use(express.json());
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
